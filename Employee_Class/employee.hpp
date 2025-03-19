@@ -1,27 +1,38 @@
 #include <iostream> 
+using namespace std; 
 
  class Employee { 
     private : 
 
-        std::string name ; 
+        string name ; 
         int idNumber ; 
-        std::string departement ; 
-        std::string position ; 
+        string departement ; 
+        string position ; 
 
     public: 
+
+        //Default Constructor 
+        Employee(); 
+
         // constructor 
-        Employee( std::string newName , int newId , std::string newDepartement , std::string newPosition) {} ; 
+        Employee( string newName , int newId , string newDepartement , string newPosition)  ; 
 
         //name accessors functions 
-        std::string getName() {} ; 
-        std::string setName(std::string name) {} ; 
+        string getName() ; 
+        string setName(string name) ; 
 
         //id number accessors functions 
-        int getID() {} ; 
-        int setID(int newId) {} ; 
+        int getID()  ; 
+        int setID(int newId)  ; 
 
         // departement accessors functions 
-        std::string 
+        string getDepartement() ; 
+        string setDepartement() ; 
+
+        //postion accessors functions 
+        string getPosition(); 
+        string setPosition(); 
+
 
 
 
