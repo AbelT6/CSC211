@@ -6,7 +6,7 @@ using namespace std;
 
         string name ; 
         int idNumber ; 
-        string departement ; 
+        string department ; 
         string position ; 
 
     public: 
@@ -14,30 +14,26 @@ using namespace std;
         //Default Constructor 
         Employee(); 
 
-        // constructor 
-        Employee( string newName , int newId , string newDepartement , string newPosition)  ; 
+        // 1st Constructor 
+        Employee( string newName , int newId , string newDepartment , string newPosition)  ; 
+
+        // 2nd Constructor 
+        Employee(string newName , int newId) ; 
 
         //name accessors functions 
         string getName() ; 
-        string setName(string name) ; 
+        void  setName(string newName) ; 
 
         //id number accessors functions 
         int getID()  ; 
-        int setID(int newId)  ; 
+        void setID(int newId)  ; 
 
         // departement accessors functions 
-        string getDepartement() ; 
-        string setDepartement() ; 
+        string getDepartment() ; 
+        void setDepartment(string newDepartment) ; 
 
         //postion accessors functions 
         string getPosition(); 
-        string setPosition(); 
-
-
-
-
-
-
-
+        void  setPosition(string newPosition); 
 
 };
