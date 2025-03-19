@@ -1,4 +1,5 @@
-#include <iostream> 
+#include <iostream>
+#include <iomanip> 
 #include "employee.hpp"
 
 
@@ -61,4 +62,22 @@ void Employee::setDepartment( string newDepartment) {
 
 void Employee::setPosition(string newPosition) { 
     position = newPosition; 
+}
+
+// display employee 
+
+void Employee::display() { 
+    cout << left << setw(20) << name 
+         << setw(15) << idNumber 
+         << setw(20) << department 
+         << setw(20) << position << endl; 
+}
+
+void displayHeader() { 
+    cout << "_________________________________________________________________________________________" << endl;
+    cout << left << setw(20) << "Name" 
+         << setw(15) << "ID Number" 
+         << setw(20) << "Department" 
+         << setw(20) << "Position" << endl; 
+    cout << "_________________________________________________________________________________________" << endl;
 }

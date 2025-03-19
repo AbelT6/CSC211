@@ -36,4 +36,8 @@ using namespace std;
         string getPosition(); 
         void  setPosition(string newPosition); 
 
+        void display(); 
+
 };
+
+void displayHeader() ; 
