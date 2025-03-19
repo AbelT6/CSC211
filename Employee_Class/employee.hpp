@@ -12,15 +12,17 @@
         // constructor 
         Employee( std::string newName , int newId , std::string newDepartement , std::string newPosition) {} ; 
 
-        //name setter and getter 
+        //name accessors functions 
         std::string getName() {} ; 
         std::string setName(std::string name) {} ; 
 
-        //id number setter and getter 
-        int get_id() {} ; 
-        int set_name(int newId) {} ; 
+        //id number accessors functions 
+        int getID() {} ; 
+        int setID(int newId) {} ; 
 
-        //id 
+        // departement accessors functions 
+        std::string 
+
 
 
 
